@@ -15,20 +15,6 @@ inv_omega = omega.inverse_mod(q)
 R.<x> = PolynomialRing(IntegerModRing(q))
 R.<x> = R.quotient(x^n + 1)
 
-powers = vector(ZZ,n)
-inv_powers = vector(ZZ,n)
-
-rootpowers = vector(ZZ,n)
-inv_rootpowers = vector(ZZ,n)
-
-for i in range(n):
-	powers[i] = mod(omega^i, q)
-	inv_powers[i] = mod(inv_omega^i, q)
-	rootpowers[i] = mod(root^i, q)
-	inv_rootpowers[i] = mod(inv_root^i, q)
-
-
-
 
 
 
